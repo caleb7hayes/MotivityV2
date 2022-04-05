@@ -14,6 +14,10 @@
 		2FDFD7AD27FCDE7600597686 /* MotivityV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDFD7AC27FCDE7600597686 /* MotivityV2Tests.swift */; };
 		2FDFD7B727FCDE7600597686 /* MotivityV2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDFD7B627FCDE7600597686 /* MotivityV2UITests.swift */; };
 		2FDFD7B927FCDE7600597686 /* MotivityV2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDFD7B827FCDE7600597686 /* MotivityV2UITestsLaunchTests.swift */; };
+		2FDFD7C627FCE17100597686 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FDFD7C527FCE17000597686 /* GoogleService-Info.plist */; };
+		46C7DF83524884DCE109670A /* Pods_MotivityV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B2C090AB7BFACBF740F49F /* Pods_MotivityV2.framework */; };
+		C2F15731BBDF7F8E3B1E7D49 /* Pods_MotivityV2_MotivityV2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F37F29715902FB7B2CF5076 /* Pods_MotivityV2_MotivityV2UITests.framework */; };
+		F00385C609B53E099B7921D9 /* Pods_MotivityV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4215DFCEBDD7A693D0213D9 /* Pods_MotivityV2Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,16 @@
 		2FDFD7B227FCDE7600597686 /* MotivityV2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotivityV2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDFD7B627FCDE7600597686 /* MotivityV2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivityV2UITests.swift; sourceTree = "<group>"; };
 		2FDFD7B827FCDE7600597686 /* MotivityV2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivityV2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FDFD7C527FCE17000597686 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		36B2C090AB7BFACBF740F49F /* Pods_MotivityV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotivityV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B9F761E225EDC2BFCDF143 /* Pods-MotivityV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2.debug.xcconfig"; path = "Target Support Files/Pods-MotivityV2/Pods-MotivityV2.debug.xcconfig"; sourceTree = "<group>"; };
+		551348C0D5533CE2B90ABDEF /* Pods-MotivityV2-MotivityV2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2-MotivityV2UITests.release.xcconfig"; path = "Target Support Files/Pods-MotivityV2-MotivityV2UITests/Pods-MotivityV2-MotivityV2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		76A953DD45B021E9ECAF577E /* Pods-MotivityV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2Tests.debug.xcconfig"; path = "Target Support Files/Pods-MotivityV2Tests/Pods-MotivityV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A2ABD248E3577329531831D /* Pods-MotivityV2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2Tests.release.xcconfig"; path = "Target Support Files/Pods-MotivityV2Tests/Pods-MotivityV2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7F37F29715902FB7B2CF5076 /* Pods_MotivityV2_MotivityV2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotivityV2_MotivityV2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC9D92944D7ADD2C9BE545 /* Pods-MotivityV2-MotivityV2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2-MotivityV2UITests.debug.xcconfig"; path = "Target Support Files/Pods-MotivityV2-MotivityV2UITests/Pods-MotivityV2-MotivityV2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD245AF35BCC9841EBC12F9C /* Pods-MotivityV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotivityV2.release.xcconfig"; path = "Target Support Files/Pods-MotivityV2/Pods-MotivityV2.release.xcconfig"; sourceTree = "<group>"; };
+		F4215DFCEBDD7A693D0213D9 /* Pods_MotivityV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotivityV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C7DF83524884DCE109670A /* Pods_MotivityV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00385C609B53E099B7921D9 /* Pods_MotivityV2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F15731BBDF7F8E3B1E7D49 /* Pods_MotivityV2_MotivityV2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,8 @@
 				2FDFD7AB27FCDE7600597686 /* MotivityV2Tests */,
 				2FDFD7B527FCDE7600597686 /* MotivityV2UITests */,
 				2FDFD79927FCDE7300597686 /* Products */,
+				C089B2DE2DCEEA01CE8C395C /* Pods */,
+				AE65CC0F53C0DAC3F81E27C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +113,7 @@
 		2FDFD79A27FCDE7300597686 /* MotivityV2 */ = {
 			isa = PBXGroup;
 			children = (
+				2FDFD7C527FCE17000597686 /* GoogleService-Info.plist */,
 				2FDFD79B27FCDE7300597686 /* MotivityV2App.swift */,
 				2FDFD79D27FCDE7300597686 /* ContentView.swift */,
 				2FDFD79F27FCDE7500597686 /* Assets.xcassets */,
@@ -127,6 +147,30 @@
 			path = MotivityV2UITests;
 			sourceTree = "<group>";
 		};
+		AE65CC0F53C0DAC3F81E27C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36B2C090AB7BFACBF740F49F /* Pods_MotivityV2.framework */,
+				7F37F29715902FB7B2CF5076 /* Pods_MotivityV2_MotivityV2UITests.framework */,
+				F4215DFCEBDD7A693D0213D9 /* Pods_MotivityV2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C089B2DE2DCEEA01CE8C395C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36B9F761E225EDC2BFCDF143 /* Pods-MotivityV2.debug.xcconfig */,
+				CD245AF35BCC9841EBC12F9C /* Pods-MotivityV2.release.xcconfig */,
+				ADCC9D92944D7ADD2C9BE545 /* Pods-MotivityV2-MotivityV2UITests.debug.xcconfig */,
+				551348C0D5533CE2B90ABDEF /* Pods-MotivityV2-MotivityV2UITests.release.xcconfig */,
+				76A953DD45B021E9ECAF577E /* Pods-MotivityV2Tests.debug.xcconfig */,
+				7A2ABD248E3577329531831D /* Pods-MotivityV2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FDFD7BC27FCDE7600597686 /* Build configuration list for PBXNativeTarget "MotivityV2" */;
 			buildPhases = (
+				E3D8446061FB8CA4608A15BC /* [CP] Check Pods Manifest.lock */,
 				2FDFD79427FCDE7300597686 /* Sources */,
 				2FDFD79527FCDE7300597686 /* Frameworks */,
 				2FDFD79627FCDE7300597686 /* Resources */,
+				C1AC3BDEDFE9EC36C6DD6CA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FDFD7BF27FCDE7600597686 /* Build configuration list for PBXNativeTarget "MotivityV2Tests" */;
 			buildPhases = (
+				CB03D1219AEB0E0369B36839 /* [CP] Check Pods Manifest.lock */,
 				2FDFD7A427FCDE7600597686 /* Sources */,
 				2FDFD7A527FCDE7600597686 /* Frameworks */,
 				2FDFD7A627FCDE7600597686 /* Resources */,
@@ -169,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FDFD7C227FCDE7600597686 /* Build configuration list for PBXNativeTarget "MotivityV2UITests" */;
 			buildPhases = (
+				3FCB6119E77F5C079E117A6C /* [CP] Check Pods Manifest.lock */,
 				2FDFD7AE27FCDE7600597686 /* Sources */,
 				2FDFD7AF27FCDE7600597686 /* Frameworks */,
 				2FDFD7B027FCDE7600597686 /* Resources */,
+				2DE743979A8DA7A23B6E3DC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FDFD7A327FCDE7500597686 /* Preview Assets.xcassets in Resources */,
+				2FDFD7C627FCE17100597686 /* GoogleService-Info.plist in Resources */,
 				2FDFD7A027FCDE7500597686 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DE743979A8DA7A23B6E3DC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotivityV2-MotivityV2UITests/Pods-MotivityV2-MotivityV2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotivityV2-MotivityV2UITests/Pods-MotivityV2-MotivityV2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MotivityV2-MotivityV2UITests/Pods-MotivityV2-MotivityV2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FCB6119E77F5C079E117A6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotivityV2-MotivityV2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1AC3BDEDFE9EC36C6DD6CA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotivityV2/Pods-MotivityV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MotivityV2/Pods-MotivityV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MotivityV2/Pods-MotivityV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB03D1219AEB0E0369B36839 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotivityV2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D8446061FB8CA4608A15BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotivityV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FDFD79427FCDE7300597686 /* Sources */ = {
@@ -413,6 +566,7 @@
 		};
 		2FDFD7BD27FCDE7600597686 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B9F761E225EDC2BFCDF143 /* Pods-MotivityV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,6 +596,7 @@
 		};
 		2FDFD7BE27FCDE7600597686 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD245AF35BCC9841EBC12F9C /* Pods-MotivityV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +626,7 @@
 		};
 		2FDFD7C027FCDE7600597686 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A953DD45B021E9ECAF577E /* Pods-MotivityV2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +647,7 @@
 		};
 		2FDFD7C127FCDE7600597686 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2ABD248E3577329531831D /* Pods-MotivityV2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +668,7 @@
 		};
 		2FDFD7C327FCDE7600597686 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCC9D92944D7ADD2C9BE545 /* Pods-MotivityV2-MotivityV2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +687,7 @@
 		};
 		2FDFD7C427FCDE7600597686 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 551348C0D5533CE2B90ABDEF /* Pods-MotivityV2-MotivityV2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
