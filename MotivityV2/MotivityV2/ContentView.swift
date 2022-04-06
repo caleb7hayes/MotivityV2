@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import WebKit
 
 
 class ViewController: ObservableObject {
@@ -23,7 +24,7 @@ class ViewController: ObservableObject {
     var isSignedIn: Bool {
         return auth.currentUser != nil
     }
-    
+
     func signIn(email: String, password: String){
         auth.signIn(withEmail: email, password: password) {[weak self] result, error in
             guard result != nil, error == nil else {
@@ -50,22 +51,24 @@ class ViewController: ObservableObject {
         self.signedIn = false
     }
     
-    
     func displayPosts(){
-        databaseHandle = self.ref.child("users").child(userID!).observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? String
-            
-            if let actualPost = post {
-                if !self.postData.contains(actualPost) {
-                    self.postData.append(actualPost)
+        self.ref.child("Users").child(userID!).child("Events").observeSingleEvent(of: .value, with: { (snapshot) in
+            for event in snapshot.children.allObjects as! [DataSnapshot]{
+                for data in event.children.allObjects as! [DataSnapshot]{
+                    let post = data.value as! String
+                    if !self.postData.contains(post) {
+                        self.postData.append(data.value as! String)
+                    }
                 }
             }
+            
         })
     }
     
-    func createPost(post: String){
-        self.ref.child("users").child(userID!).childByAutoId().setValue(post)
+    func createEvent(eventName: String, desc: String, startTime: String, endTime: String){
+        self.ref.child("Users").child(userID!).child("Events").child(eventName).setValue(["Description": desc, "Start Time": startTime, "End Time": endTime])
     }
+    
     
 }
 
@@ -149,7 +152,6 @@ struct SignUpView: View {
     @State var password = ""
     
     @ObservedObject var appView = ViewController()
-    
     @EnvironmentObject var viewModel: ViewController
     
     var body: some View {
@@ -195,12 +197,13 @@ struct AccountView: View {
     @ObservedObject var appView = ViewController()
     @EnvironmentObject var viewModel: ViewController
     
+    @State var userName = ""
     
     var body: some View {
         NavigationView {
             VStack {
-                Text("You are signed in")
-                
+                Text("Hello!")
+
                 Button(action: {
                     viewModel.signOut()
                 }, label: {
@@ -211,10 +214,13 @@ struct AccountView: View {
                         .background(Color.blue)
                         .padding()
                 })
-                NavigationLink("Create post", destination: CreateView())
+                
+                NavigationLink("Input Users Data", destination: CreateView())
                     .padding()
+                
                 NavigationLink("View Data", destination: DataView())
                     .padding()
+                
             }
         }
     }
@@ -224,18 +230,33 @@ struct CreateView: View {
     @ObservedObject var appView = ViewController()
     @EnvironmentObject var viewModel: ViewController
     
-    @State var post = ""
+    @State var eventName = ""
+    @State var description = ""
+    @State var startTime = ""
+    @State var endTime = ""
+    
     
     var body: some View {
         VStack {
-            TextField("Compose", text: $post)
+            TextField("Event Name", text: $eventName)
                 .padding()
                 .background(Color(.secondarySystemBackground))
             
+            TextField("Description", text: $description)
+                .padding()
+                .background(Color(.secondarySystemBackground))
+            
+            TextField("Start Time", text: $startTime)
+                .padding()
+                .background(Color(.secondarySystemBackground))
+            
+            TextField("End Time", text: $endTime)
+                .padding()
+                .background(Color(.secondarySystemBackground))
             Button(action: {
-                viewModel.createPost(post: post)
+                viewModel.createEvent(eventName: eventName, desc: description, startTime: startTime, endTime: endTime)
             }, label: {
-                Text("Create Post")
+                Text("Submit Data")
             })
         }
     }
